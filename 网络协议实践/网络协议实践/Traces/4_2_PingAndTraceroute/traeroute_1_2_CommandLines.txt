@@ -1,0 +1,15 @@
+[jnm@softeng ~]$ traceroute bgpdata.sclab.clarkson.edu
+traceroute to bgpdata.sclab.clarkson.edu (128.153.145.86), 30 hops max, 38 byte packets
+ 1  gw (128.153.8.1)  0.429 ms  0.413 ms  0.394 ms
+ 2  bgpdata.sclab.clarkson.edu (128.153.145.86)  0.337 ms  0.347 ms  0.339 ms
+[jnm@softeng ~]$ 
+
+
+
+[root@bgpdata jnm]# ./traceroute softeng.camp.clarkson.edu
+traceroute to softeng.camp.clarkson.edu (128.153.11.150), 30 hops max, 38 byte packets
+ 1  gw (128.153.144.1)  0.629 ms  0.657 ms  0.590 ms
+ 2  128.153.11.150 (128.153.11.150)  0.522 ms  0.525 ms  0.520 ms
+[root@bgpdata jnm]# 
+
+

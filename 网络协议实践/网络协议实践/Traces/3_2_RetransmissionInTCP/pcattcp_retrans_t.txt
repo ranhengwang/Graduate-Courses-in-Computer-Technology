@@ -1,0 +1,11 @@
+C:\Downloads\ttcp>pcattcp -t  -l 1000 -n 50 192.168.0.102
+PCAUSA Test TCP Utility V2.01.01.07
+TCP Transmit Test
+  Transmit    : TCP -> 192.168.0.102:5001
+  Buffer Size : 1000; Alignment: 16384/0
+  TCP_NODELAY : DISABLED (0)
+  Connect     : Connected to 192.168.0.102:5001
+  Send Mode   : Send Pattern; Number of Buffers: 50
+  Statistics  : TCP -> 192.168.0.102:5001
+50000 bytes in 3.16 real seconds = 15.47 KB/sec +++
+numCalls: 50; msec/call: 64.63; calls/sec: 15.84

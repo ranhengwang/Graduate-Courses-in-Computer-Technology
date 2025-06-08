@@ -1,0 +1,36 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+_BITMAP_H_	bitmap.h	/^#define _BITMAP_H_$/;"	d
+_INODE_H_	inode.h	/^#define _INODE_H_$/;"	d
+_SUPER_H_	super.h	/^#define _SUPER_H_$/;"	d
+bitmap_mutex	filesystems.cpp	/^pthread_mutex_t bitmap_mutex;$/;"	v
+cc	Makefile	/^cc ?= g++$/;"	m
+cflags	Makefile	/^cflags ?= -Wall$/;"	m
+cpp_objs	Makefile	/^cpp_objs = $(patsubst %.cpp,%.o,$(cpp_src))$/;"	m
+cpp_src	Makefile	/^cpp_src = $(wildcard *.cpp)$/;"	m
+cppflags	Makefile	/^cppflags ?= -Wall$/;"	m
+create_big_file	filesystems.cpp	/^int create_big_file(const char *filename, int size, unsigned short scale)$/;"	f
+format_fs	filesystems.cpp	/^int format_fs()$/;"	f
+include_path	Makefile	/^include_path = -I..\/include$/;"	m
+init_bitmap	bitmap.cpp	/^int init_bitmap(int fd)$/;"	f
+init_fs	filesystems.cpp	/^int init_fs()$/;"	f
+init_inodes	inode.cpp	/^int init_inodes(const int fd)$/;"	f
+init_super_block	super.cpp	/^int init_super_block(const int fd)$/;"	f
+inodes_mutex	filesystems.cpp	/^pthread_mutex_t inodes_mutex[INODE_COUNT];$/;"	v
+list_files	filesystems.cpp	/^int list_files()$/;"	f
+objs	Makefile	/^objs = $(wildcard *.o)$/;"	m
+open_virt_file	filesystems.cpp	/^int open_virt_file(int mode)$/;"	f
+print_inode_info	inode.cpp	/^int print_inode_info(const struct INode *in_ptr)$/;"	f
+print_super_block	super.cpp	/^int print_super_block(const struct SuperBlock *sb_ptr)$/;"	f
+read_bitmap	bitmap.cpp	/^int read_bitmap(int fd, uint8_t *bitmap_ptr, int *count_ptr)$/;"	f
+read_inodes	inode.cpp	/^int read_inodes(int fd, const struct INode *in_ptr)$/;"	f
+read_specific_inode	inode.cpp	/^int read_specific_inode(int fd, unsigned int num, const struct INode *in_ptr)$/;"	f
+read_super_block	super.cpp	/^int read_super_block(const int fd, struct SuperBlock *sb_ptr)$/;"	f
+write_bitmap	bitmap.cpp	/^int write_bitmap(int fd, void *bitmap_ptr, int size)$/;"	f
+write_file	filesystems.cpp	/^int write_file(char *filename, int len, void *file_binary, int filesize)$/;"	f
+write_inode	inode.cpp	/^int write_inode(const int fd, const struct INode *in_ptr, int num)$/;"	f
+write_super_blcok	super.cpp	/^int write_super_blcok(const int fd, struct SuperBlock *sb_ptr)$/;"	f

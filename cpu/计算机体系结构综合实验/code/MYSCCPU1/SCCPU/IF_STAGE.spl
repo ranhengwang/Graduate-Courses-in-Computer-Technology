@@ -1,0 +1,14 @@
+[Inputs]
+clk
+clrn
+=pcsource[1:0]=
+=bpc[31:0]=
+=jpc[31:0]=
+[Outputs]
+=pc4[31:0]=
+=inst[31:0]=
+=PC[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel IF_STAGE
+

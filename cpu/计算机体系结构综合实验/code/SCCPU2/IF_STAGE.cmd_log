@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/MYSCCPU/SCCPU/IF_STAGE.xst" -ofn "C:/Users/Administrator/Desktop/MYSCCPU/SCCPU/IF_STAGE.syr" 

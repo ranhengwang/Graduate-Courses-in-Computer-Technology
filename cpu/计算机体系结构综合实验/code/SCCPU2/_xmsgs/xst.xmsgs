@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\Administrator\Desktop\SCCPU\SCCPU.v" Line 59: Assignment to <arg fmt="%s" index="1">wb_wreg</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\Administrator\Desktop\SCCPU\SCCPU.v" Line 61: Assignment to <arg fmt="%s" index="1">wb_wreg</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Administrator\Desktop\SCCPU\SCCPU.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">wb_rn</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MEM_WB</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Administrator\Desktop\SCCPU\SCCPU.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">wb_wreg</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MEM_WB</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Administrator\Desktop\SCCPU\SCCPU.v</arg>&quot; line <arg fmt="%s" index="2">61</arg>: Output port &lt;<arg fmt="%s" index="3">wrn</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">stage5</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Administrator\Desktop\SCCPU\SCCPU.v</arg>&quot; line <arg fmt="%s" index="2">61</arg>: Output port &lt;<arg fmt="%s" index="3">wwreg</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">stage5</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ern</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">em2reg</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ewmem</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">ewreg</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">mrn</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">mwreg</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">mm2reg</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">wrn</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">wwreg</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="new" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">wb_m2reg</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">MEM_WB</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">exe_m2reg</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ID_EXE</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mem_m2reg</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">EXE_MEM</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_inst</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3217" delta="new" >HDL ADVISOR - Register &lt;<arg fmt="%s" index="1">wb_mo</arg>&gt; currently described with an asynchronous reset, could be combined with distributed RAM &lt;<arg fmt="%s" index="2">Mram_ram</arg>&gt; for implementation on block RAM resources if you made this reset synchronous instead.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_ram</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">SCCPU</arg>&gt; on signal &lt;<arg fmt="%s" index="2">mem_rn&lt;4&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">SCCPU</arg>&gt; on signal &lt;<arg fmt="%s" index="2">mem_rn&lt;3&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">SCCPU</arg>&gt; on signal &lt;<arg fmt="%s" index="2">mem_rn&lt;2&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">SCCPU</arg>&gt; on signal &lt;<arg fmt="%s" index="2">mem_rn&lt;1&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">SCCPU</arg>&gt; on signal &lt;<arg fmt="%s" index="2">mem_rn&lt;0&gt;</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">SCCPU</arg>&gt; on signal &lt;<arg fmt="%s" index="2">mem_m2reg</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+<msg type="error" file="Xst" num="528" delta="new" >Multi-source in Unit &lt;<arg fmt="%s" index="1">SCCPU</arg>&gt; on signal &lt;<arg fmt="%s" index="2">mem_wreg</arg>&gt;; this signal is connected to multiple drivers.
+</msg>
+
+</messages>
+

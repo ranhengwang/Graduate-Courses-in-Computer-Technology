@@ -1,0 +1,27 @@
+>ping 192.168.0.1
+
+Pinging 192.168.0.1 with 32 bytes of data:
+
+Reply from 192.168.0.1: bytes=32 time=1ms TTL=150
+Reply from 192.168.0.1: bytes=32 time<1ms TTL=150
+Reply from 192.168.0.1: bytes=32 time<1ms TTL=150
+Reply from 192.168.0.1: bytes=32 time<1ms TTL=150
+
+Ping statistics for 192.168.0.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 1ms, Average = 0ms
+
+>ping www.iana.org
+
+Pinging www.iana.org [192.0.34.162] with 32 bytes of data:
+
+Reply from 192.0.34.162: bytes=32 time=106ms TTL=44
+Reply from 192.0.34.162: bytes=32 time=105ms TTL=44
+Reply from 192.0.34.162: bytes=32 time=110ms TTL=44
+Reply from 192.0.34.162: bytes=32 time=111ms TTL=44
+
+Ping statistics for 192.0.34.162:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 105ms, Maximum = 111ms, Average = 108ms

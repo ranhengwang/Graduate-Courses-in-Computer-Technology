@@ -1,0 +1,57 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/qeuroal/courses_src/linux_environment_programming/second_homework/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+%.o	Makefile	/^%.o: %.cpp$/;"	t
+BUFFER_MAX_SIZE	lengthdef.h	/^#define BUFFER_MAX_SIZE /;"	d
+BUFFER_SIZE	lengthdef.h	/^#define BUFFER_SIZE /;"	d
+FILENAME_LEN	lengthdef.h	/^#define FILENAME_LEN /;"	d
+PipeBuffer	pipe_buffer.cpp	/^PipeBuffer::PipeBuffer(size_t offset, int len, int buffer_size) :$/;"	f	class:PipeBuffer
+PipeBuffer	pipe_buffer.h	/^class PipeBuffer$/;"	c
+ThreadParams	thread_params.cpp	/^ThreadParams::ThreadParams(int id, int fd, uint32_t thread_group_count, char *filename, size_t b/;"	f	class:ThreadParams
+ThreadParams	thread_params.h	/^    ThreadParams() {}$/;"	f	class:ThreadParams
+ThreadParams	thread_params.h	/^class ThreadParams$/;"	c
+_CONSUMER_H_	consumer.h	/^#define _CONSUMER_H_$/;"	d
+_LENGTHDEF_H_	lengthdef.h	/^#define _LENGTHDEF_H_$/;"	d
+_PIPE_BUFFER_H_	pipe_buffer.h	/^#define _PIPE_BUFFER_H_$/;"	d
+_PRODUCTOR_H_	productor.h	/^#define _PRODUCTOR_H_$/;"	d
+_THREAD_PARAMS_H_	thread_params.h	/^#define _THREAD_PARAMS_H_$/;"	d
+buf_size	thread_params.h	/^    size_t buf_size;$/;"	m	class:ThreadParams	typeref:typename:size_t
+cc	Makefile	/^cc ?= g++$/;"	m
+clean	Makefile	/^clean:$/;"	t
+consume_thread_func	consumer.cpp	/^void *consume_thread_func(void *args)$/;"	f	typeref:typename:void *
+cpp_objs	Makefile	/^cpp_objs = $(patsubst %.cpp,%.o,$(cpp_src))$/;"	m
+cpp_src	Makefile	/^cpp_src = $(wildcard *.cpp)$/;"	m
+cppflags	Makefile	/^cppflags = -Wall$/;"	m
+data	pipe_buffer.h	/^    char *data;$/;"	m	class:PipeBuffer	typeref:typename:char *
+demo	Makefile	/^demo: $(cpp_objs)$/;"	t
+epoch	thread_params.h	/^    int epoch;$/;"	m	class:ThreadParams	typeref:typename:int
+fd	thread_params.h	/^    int fd;$/;"	m	class:ThreadParams	typeref:typename:int
+filename	thread_params.h	/^    char filename[FILENAME_LEN];$/;"	m	class:ThreadParams	typeref:typename:char[]
+id	thread_params.h	/^    uint32_t id;$/;"	m	class:ThreadParams	typeref:typename:uint32_t
+init_consumer	consumer.cpp	/^int init_consumer(uint32_t thread_count, int fd, char *filename)$/;"	f	typeref:typename:int
+init_productor	productor.cpp	/^int init_productor(uint32_t thread_count,int fd, char *filename)$/;"	f	typeref:typename:int
+kConsumerParams	consumer.cpp	/^ThreadParams **kConsumerParams;$/;"	v	typeref:typename:ThreadParams **
+kConsumerThreadCount	consumer.cpp	/^uint32_t kConsumerThreadCount = 0;$/;"	v	typeref:typename:uint32_t
+kConsumerThreads	consumer.cpp	/^pthread_t *kConsumerThreads;$/;"	v	typeref:typename:pthread_t *
+kProductorParams	productor.cpp	/^ThreadParams **kProductorParams;$/;"	v	typeref:typename:ThreadParams **
+kProductorThreadCount	productor.cpp	/^uint32_t kProductorThreadCount = 0;$/;"	v	typeref:typename:uint32_t
+kProductorThreads	productor.cpp	/^pthread_t *kProductorThreads;$/;"	v	typeref:typename:pthread_t *
+len	pipe_buffer.h	/^    uint32_t len;$/;"	m	class:PipeBuffer	typeref:typename:uint32_t
+main	main.cpp	/^int main(int argc, char **args)$/;"	f	typeref:typename:int
+name	thread_params.h	/^    char name[FILENAME_LEN];$/;"	m	class:ThreadParams	typeref:typename:char[]
+offset	pipe_buffer.h	/^    size_t offset;$/;"	m	class:PipeBuffer	typeref:typename:size_t
+print_info	thread_params.cpp	/^int ThreadParams::print_info()$/;"	f	class:ThreadParams	typeref:typename:int
+product_thread_func	productor.cpp	/^void *product_thread_func(void *args)$/;"	f	typeref:typename:void *
+sm	macros.h	/^        snprintf(buffer, sizeof(buffer) - 1, "\\033[%sm>>> %s|%d@%s: \\033[0m", color, __FILE__,/;"	m
+thread_group_count	thread_params.h	/^    uint32_t thread_group_count;$/;"	m	class:ThreadParams	typeref:typename:uint32_t
+uninit_consumer	consumer.cpp	/^int uninit_consumer()$/;"	f	typeref:typename:int
+uninit_productor	productor.cpp	/^int uninit_productor()$/;"	f	typeref:typename:int
+~PipeBuffer	pipe_buffer.cpp	/^PipeBuffer::~PipeBuffer()$/;"	f	class:PipeBuffer

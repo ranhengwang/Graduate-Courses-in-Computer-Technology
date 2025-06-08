@@ -1,0 +1,14 @@
+#ifndef _COMMON_LENGTH_PROTOCOL_H_
+#define _COMMON_LENGTH_PROTOCOL_H_
+
+#define NAME_LENGTH 32
+
+// 64MB
+#define STREAM_BUFFER_DATA_LENGTH 67108864
+
+
+#endif
+
+
+
+

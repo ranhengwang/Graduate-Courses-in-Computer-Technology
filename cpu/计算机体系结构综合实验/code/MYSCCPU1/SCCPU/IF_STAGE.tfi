@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+IF_STAGE instance_name (
+    .clk(clk), 
+    .clrn(clrn), 
+    .pcsource(pcsource), 
+    .bpc(bpc), 
+    .jpc(jpc), 
+    .pc4(pc4), 
+    .inst(inst), 
+    .PC(PC)
+    );
+
+

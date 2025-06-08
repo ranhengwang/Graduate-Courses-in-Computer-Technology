@@ -1,0 +1,13 @@
+C:\Downloads\ttcp>pcattcp -r -l 1000
+PCAUSA Test TCP Utility V2.01.01.07
+TCP Receive Test
+  Local Host  : cs-00065be34d1d
+**************
+  Listening...: On port 5001
+
+  Accept      : TCP <- 192.168.0.100:4480
+  Buffer Size : 1000; Alignment: 16384/0
+  Receive Mode: Sinking (discarding) Data
+  Statistics  : TCP <- 192.168.0.100:4480
+50000 bytes in 4.03 real seconds = 12.13 KB/sec +++
+numCalls: 63; msec/call: 65.44; calls/sec: 15.65
