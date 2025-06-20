@@ -1,0 +1,191 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/qeuroal/courses_src/linux_environment_programming/first_homework/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+%.o	Makefile	/^%.o: %.cpp$/;"	t
+%.o	fs/Makefile	/^%.o: %.c$/;"	t
+%.o	fs/Makefile	/^%.o: %.cpp$/;"	t
+%.o	net/Makefile	/^%.o: %.c$/;"	t
+%.o	net/Makefile	/^%.o: %.cpp$/;"	t
+%.o	tools/Makefile	/^%.o: %.c$/;"	t
+%.o	tools/Makefile	/^%.o: %.cpp$/;"	t
+BITMAP_SIZE	include/linux/fs/fs_size_def.h	/^#define BITMAP_SIZE /;"	d
+BYTE_SIZE	include/linux/fs/fs_size_def.h	/^#define BYTE_SIZE /;"	d
+B_FILE_SCALE_SIZE	include/linux/fs/fs.h	/^#define B_FILE_SCALE_SIZE /;"	d
+DENTRY_SIZE	include/linux/fs/fs_size_def.h	/^#define DENTRY_SIZE /;"	d
+FILENAME_LEN	include/linux/fs/fs_size_def.h	/^#define FILENAME_LEN /;"	d
+FILESIZE	include/linux/fs/fs_size_def.h	/^#define FILESIZE /;"	d
+FS_BLOCK_SIZE	include/linux/fs/fs_size_def.h	/^#define FS_BLOCK_SIZE /;"	d
+FS_STORY_SIZE	include/linux/fs/fs_size_def.h	/^#define FS_STORY_SIZE /;"	d
+GB_FILE_SCALE_SIZE	include/linux/fs/fs.h	/^#define GB_FILE_SCALE_SIZE /;"	d
+INODES_SIZE	include/linux/fs/fs_size_def.h	/^#define INODES_SIZE /;"	d
+INODE_COUNT	include/linux/fs/fs_size_def.h	/^#define INODE_COUNT /;"	d
+INODE_SIZE	include/linux/fs/fs_size_def.h	/^#define INODE_SIZE /;"	d
+INode	include/linux/fs/fs.h	/^struct INode$/;"	s
+KB_FILE_SCALE_SIZE	include/linux/fs/fs.h	/^#define KB_FILE_SCALE_SIZE /;"	d
+MB_FILE_SCALE_SIZE	include/linux/fs/fs.h	/^#define MB_FILE_SCALE_SIZE /;"	d
+NAME_LENGTH	include/linux/common_length_protocol.h	/^#define NAME_LENGTH /;"	d
+STREAM_BUFFER_COUNT	net/stream_reciever.h	/^#define STREAM_BUFFER_COUNT /;"	d
+STREAM_BUFFER_DATA_LENGTH	include/linux/common_length_protocol.h	/^#define STREAM_BUFFER_DATA_LENGTH /;"	d
+STREAM_TASK_COUNT	net/stream_reciever.cpp	/^#define STREAM_TASK_COUNT /;"	d	file:
+SUPERBLOCK_SIZE	include/linux/fs/fs_size_def.h	/^#define SUPERBLOCK_SIZE /;"	d
+StreamInfo	net/stream_info.cpp	/^StreamInfo::StreamInfo() :$/;"	f	class:StreamInfo
+StreamInfo	net/stream_info.cpp	/^StreamInfo::StreamInfo(int fd) :$/;"	f	class:StreamInfo
+StreamInfo	net/stream_info.cpp	/^StreamInfo::StreamInfo(int fd, int id, char *name) :$/;"	f	class:StreamInfo
+StreamInfo	net/stream_info.h	/^class StreamInfo$/;"	c
+SuperBlock	include/linux/fs/fs.h	/^struct SuperBlock$/;"	s
+TASK_COUNT	operate_file.cpp	/^#define TASK_COUNT /;"	d	file:
+TASK_COUNT	write_file.cpp	/^#define TASK_COUNT /;"	d	file:
+TB_FILE_SCALE_SIZE	include/linux/fs/fs.h	/^#define TB_FILE_SCALE_SIZE /;"	d
+THREAD_GROUP_MAX_COUNT	tools/thread_manager.cpp	/^#define THREAD_GROUP_MAX_COUNT /;"	d	file:
+ThreadPool	tools/thread_manager.cpp	/^ThreadPool::ThreadPool()$/;"	f	class:ThreadPool
+ThreadPool	tools/thread_manager.h	/^class ThreadPool$/;"	c
+ThreadPoolExecArgs	tools/thread_manager.cpp	/^    ThreadPoolExecArgs():$/;"	f	class:ThreadPoolExecArgs	file:
+ThreadPoolExecArgs	tools/thread_manager.cpp	/^class ThreadPoolExecArgs$/;"	c	file:
+ThreadPoolPrivMems	tools/thread_manager.cpp	/^    ThreadPoolPrivMems() :$/;"	f	class:ThreadPoolPrivMems	file:
+ThreadPoolPrivMems	tools/thread_manager.cpp	/^class ThreadPoolPrivMems$/;"	c	file:
+ThreadTask	tools/thread_manager.h	/^struct ThreadTask$/;"	s
+_BASIC_TYPE_REDEF_H_	include/linux/basic_type_redef.h	/^#define _BASIC_TYPE_REDEF_H_$/;"	d
+_BITMAP_H_	fs/bitmap.h	/^#define _BITMAP_H_$/;"	d
+_COMMON_LENGTH_PROTOCOL_H_	include/linux/common_length_protocol.h	/^#define _COMMON_LENGTH_PROTOCOL_H_$/;"	d
+_FS_H_	include/linux/fs/fs.h	/^#define _FS_H_$/;"	d
+_FS_SIZE_DEF_H_	include/linux/fs/fs_size_def.h	/^#define _FS_SIZE_DEF_H_$/;"	d
+_INODE_H_	fs/inode.h	/^#define _INODE_H_$/;"	d
+_STREAM_INFO_H_	net/stream_info.h	/^#define _STREAM_INFO_H_$/;"	d
+_STREAM_RECIEVER_H_	net/stream_reciever.h	/^#define _STREAM_RECIEVER_H_$/;"	d
+_SUPER_H_	fs/super.h	/^#define _SUPER_H_$/;"	d
+_THREAD_MANAGRE_H_	tools/thread_manager.h	/^#define _THREAD_MANAGRE_H_$/;"	d
+all	Makefile	/^all: fs_make tools_make write_file_demo operate_file_demo$/;"	t
+all	fs/Makefile	/^all: $(cpp_objs)$/;"	t
+all	net/Makefile	/^all: $(cpp_objs)$/;"	t
+all	tools/Makefile	/^all: $(cpp_objs)$/;"	t
+append_data	net/stream_info.cpp	/^int StreamInfo::append_data(char *data, uint64_t len)$/;"	f	class:StreamInfo	typeref:typename:int
+bitmap_bit_count	include/linux/fs/fs.h	/^    unsigned int bitmap_bit_count;$/;"	m	struct:SuperBlock	typeref:typename:unsigned int
+bitmap_mutex	fs/filesystems.cpp	/^pthread_mutex_t bitmap_mutex;$/;"	v	typeref:typename:pthread_mutex_t
+bitmap_size	include/linux/fs/fs.h	/^    unsigned int bitmap_size;$/;"	m	struct:SuperBlock	typeref:typename:unsigned int
+block_num	include/linux/fs/fs.h	/^    uint32_t block_num;$/;"	m	struct:INode	typeref:typename:uint32_t
+callback	tools/thread_manager.h	/^    void *(*callback)(void *);$/;"	m	struct:ThreadTask	typeref:typename:void * (*)(void *)
+callback_args	tools/thread_manager.h	/^    void *callback_args;$/;"	m	struct:ThreadTask	typeref:typename:void *
+cc	Makefile	/^cc ?= g++$/;"	m
+cc	fs/Makefile	/^cc ?= g++$/;"	m
+cc	net/Makefile	/^cc ?= g++$/;"	m
+cc	tools/Makefile	/^cc ?= g++$/;"	m
+clean	Makefile	/^clean:$/;"	t
+clean	fs/Makefile	/^clean:$/;"	t
+clean	net/Makefile	/^clean:$/;"	t
+clean	tools/Makefile	/^clean:$/;"	t
+clean_stream_info_memory	net/stream_reciever.cpp	/^void clean_stream_info_memory(void *args)$/;"	f	typeref:typename:void
+closed_signal_mutex	tools/thread_manager.cpp	/^    pthread_mutex_t closed_signal_mutex;$/;"	m	class:ThreadPoolExecArgs	typeref:typename:pthread_mutex_t	file:
+cpp_objs	fs/Makefile	/^cpp_objs = $(patsubst %.cpp,%.o,$(cpp_src))$/;"	m
+cpp_objs	net/Makefile	/^cpp_objs = $(patsubst %.cpp,%.o,$(cpp_src))$/;"	m
+cpp_objs	tools/Makefile	/^cpp_objs = $(patsubst %.cpp,%.o,$(cpp_src))$/;"	m
+cpp_src	fs/Makefile	/^cpp_src = $(wildcard *.cpp)$/;"	m
+cpp_src	net/Makefile	/^cpp_src = $(wildcard *.cpp)$/;"	m
+cpp_src	tools/Makefile	/^cpp_src = $(wildcard *.cpp)$/;"	m
+cppflags	Makefile	/^cppflags = -Wall$/;"	m
+cppflags	fs/Makefile	/^cppflags ?= -Wall$/;"	m
+cppflags	net/Makefile	/^cppflags ?= -Wall$/;"	m
+cppflags	tools/Makefile	/^cppflags ?= -Wall$/;"	m
+create_big_file	fs/filesystems.cpp	/^int create_big_file(const char *filename, int size, unsigned short scale)$/;"	f	typeref:typename:int
+data	net/stream_info.h	/^    char *data;$/;"	m	class:StreamInfo	typeref:typename:char *
+data_size	net/stream_info.h	/^    uint64_t data_size;$/;"	m	class:StreamInfo	typeref:typename:uint64_t
+delete_bitmap	fs/bitmap.cpp	/^int delete_bitmap(const struct SuperBlock *sb_ptr, uint8_t *bitmap_ptr, int num)$/;"	f	typeref:typename:int
+delete_file	fs/filesystems.cpp	/^int delete_file(char *filename)$/;"	f	typeref:typename:int
+exec_args	tools/thread_manager.cpp	/^    ThreadPoolExecArgs *exec_args[THREAD_GROUP_MAX_COUNT];$/;"	m	class:ThreadPoolPrivMems	typeref:typename:ThreadPoolExecArgs * []	file:
+exec_args	tools/thread_manager.h	/^    void *exec_args;$/;"	m	struct:ThreadTask	typeref:typename:void *
+exec_func	tools/thread_manager.h	/^    void *(*exec_func)(void *);$/;"	m	struct:ThreadTask	typeref:typename:void * (*)(void *)
+exec_funcs	tools/thread_manager.cpp	/^    void *(*exec_funcs[THREAD_GROUP_MAX_COUNT])(void *);$/;"	m	class:ThreadPoolPrivMems	typeref:typename:void * (* [THREAD_GROUP_MAX_COUNT])(void *)	file:
+filename	include/linux/fs/fs.h	/^    char filename[FILENAME_LEN];$/;"	m	struct:INode	typeref:typename:char[]
+filesize	include/linux/fs/fs.h	/^    int filesize;$/;"	m	struct:SuperBlock	typeref:typename:int
+format_fs	fs/filesystems.cpp	/^int format_fs()$/;"	f	typeref:typename:int
+fs_block_size	include/linux/fs/fs.h	/^    unsigned int fs_block_size;$/;"	m	struct:SuperBlock	typeref:typename:unsigned int
+fs_magic_num	include/linux/fs/fs.h	/^    unsigned int fs_magic_num;$/;"	m	struct:SuperBlock	typeref:typename:unsigned int
+fs_make	Makefile	/^fs_make:$/;"	t
+id	net/stream_info.h	/^    int id;$/;"	m	class:StreamInfo	typeref:typename:int
+include_path	Makefile	/^include_path = -I.\/include$/;"	m
+include_path	fs/Makefile	/^include_path = -I..\/include$/;"	m
+include_path	net/Makefile	/^include_path = -I..\/include$/;"	m
+include_path	tools/Makefile	/^include_path = -I..\/include$/;"	m
+index	tools/thread_manager.cpp	/^    uint32_t index;$/;"	m	class:ThreadPoolExecArgs	typeref:typename:uint32_t	file:
+init	tools/thread_manager.cpp	/^int ThreadPool::init(ThreadTask *tasks, uint32_t task_count, uint32_t thread_count)$/;"	f	class:ThreadPool	typeref:typename:int
+init_bitmap	fs/bitmap.cpp	/^int init_bitmap()$/;"	f	typeref:typename:int
+init_fs	fs/filesystems.cpp	/^int init_fs()$/;"	f	typeref:typename:int
+init_inodes	fs/inode.cpp	/^int init_inodes()$/;"	f	typeref:typename:int
+init_stream_relative	net/stream_reciever.cpp	/^int init_stream_relative()$/;"	f	typeref:typename:int
+init_super_block	fs/super.cpp	/^int init_super_block()$/;"	f	typeref:typename:int
+inode_count	include/linux/fs/fs.h	/^    unsigned int inode_count;$/;"	m	struct:SuperBlock	typeref:typename:unsigned int
+inode_remaining_count	include/linux/fs/fs.h	/^    unsigned int inode_remaining_count;$/;"	m	struct:SuperBlock	typeref:typename:unsigned int
+inode_size	include/linux/fs/fs.h	/^    unsigned int inode_size;$/;"	m	struct:SuperBlock	typeref:typename:unsigned int
+inodes_mutex	fs/filesystems.cpp	/^pthread_mutex_t inodes_mutex[INODE_COUNT];$/;"	v	typeref:typename:pthread_mutex_t[]
+isValid	include/linux/fs/fs.h	/^    uint8_t isValid;$/;"	m	struct:INode	typeref:typename:uint8_t
+is_closed	tools/thread_manager.cpp	/^    bool is_closed;$/;"	m	class:ThreadPoolExecArgs	typeref:typename:bool	file:
+is_valid_inode	fs/bitmap.cpp	/^int is_valid_inode(const struct SuperBlock *sb_ptr, uint8_t *bitmap_ptr, int num)$/;"	f	typeref:typename:int
+list_files	fs/filesystems.cpp	/^int list_files()$/;"	f	typeref:typename:int
+listen_thread_func	net/stream_reciever.cpp	/^void *listen_thread_func(void *args)$/;"	f	typeref:typename:void *
+main	operate_file.cpp	/^int main()$/;"	f	typeref:typename:int
+main	write_file.cpp	/^int main()$/;"	f	typeref:typename:int
+members_ptr	tools/thread_manager.h	/^    ThreadPoolPrivMems *members_ptr;$/;"	m	class:ThreadPool	typeref:typename:ThreadPoolPrivMems *
+mode	include/linux/fs/fs.h	/^    uint32_t mode;$/;"	m	struct:INode	typeref:typename:uint32_t
+name	net/stream_info.h	/^    char name[NAME_LENGTH];$/;"	m	class:StreamInfo	typeref:typename:char[]
+net_make	Makefile	/^net_make:$/;"	t
+objs	Makefile	/^objs = fs\/filesystems.o fs\/inode.o fs\/super.o fs\/bitmap.o \\$/;"	m
+objs	fs/Makefile	/^objs = $(wildcard *.o)$/;"	m
+objs	net/Makefile	/^objs = $(wildcard *.o)$/;"	m
+objs	tools/Makefile	/^objs = $(wildcard *.o)$/;"	m
+open_virt_file	fs/filesystems.cpp	/^int open_virt_file(int mode)$/;"	f	typeref:typename:int
+operate_file_demo	Makefile	/^operate_file_demo: $(objs) operate_file.o$/;"	t
+paddding	include/linux/fs/fs.h	/^    char paddding[988];$/;"	m	struct:SuperBlock	typeref:typename:char[988]
+padding	include/linux/fs/fs.h	/^    char padding[81];$/;"	m	struct:INode	typeref:typename:char[81]
+print_bitmap_array	fs/bitmap.cpp	/^int print_bitmap_array(const uint8_t *bitmap_array, uint size)$/;"	f	typeref:typename:int
+print_info	net/stream_info.cpp	/^int StreamInfo::print_info()$/;"	f	class:StreamInfo	typeref:typename:int
+print_inode_info	fs/inode.cpp	/^int print_inode_info(const struct INode *in_ptr)$/;"	f	typeref:typename:int
+print_super_block	fs/super.cpp	/^int print_super_block(const struct SuperBlock *sb_ptr)$/;"	f	typeref:typename:int
+read_bitmap	fs/bitmap.cpp	/^int read_bitmap(const struct SuperBlock *sb_ptr, uint8_t *bitmap_ptr)$/;"	f	typeref:typename:int
+read_file	fs/filesystems.cpp	/^int read_file(char *filename)$/;"	f	typeref:typename:int
+read_inodes	fs/inode.cpp	/^int read_inodes(const struct INode *in_ptr)$/;"	f	typeref:typename:int
+read_specific_inode	fs/inode.cpp	/^int read_specific_inode(unsigned int num, const struct INode *in_ptr)$/;"	f	typeref:typename:int
+read_super_block	fs/super.cpp	/^int read_super_block(struct SuperBlock *sb_ptr)$/;"	f	typeref:typename:int
+run_cond	tools/thread_manager.cpp	/^    pthread_cond_t run_cond;$/;"	m	class:ThreadPoolExecArgs	typeref:typename:pthread_cond_t	file:
+set_id	net/stream_info.cpp	/^int StreamInfo::set_id(int id)$/;"	f	class:StreamInfo	typeref:typename:int
+set_name	net/stream_info.cpp	/^int StreamInfo::set_name(char *name)$/;"	f	class:StreamInfo	typeref:typename:int
+set_task	tools/thread_manager.cpp	/^    int set_task(void *task_ptr)$/;"	f	class:ThreadPoolExecArgs	typeref:typename:int	file:
+set_tasks	tools/thread_manager.cpp	/^int ThreadPool::set_tasks(ThreadTask *tasks, uint32_t task_count)$/;"	f	class:ThreadPool	typeref:typename:int
+set_write_file_des	net/stream_info.cpp	/^int StreamInfo::set_write_file_des(int fd)$/;"	f	class:StreamInfo	typeref:typename:int
+sm	include/debug/macros.h	/^        snprintf(buffer, sizeof(buffer) - 1, "\\033[%sm>>> %s|%d@%s: \\033[0m", color, __FILE__,/;"	m
+steam_thread_tasks	net/stream_reciever.cpp	/^ThreadTask steam_thread_tasks[STREAM_TASK_COUNT];$/;"	v	typeref:typename:ThreadTask[]
+stream_pfd	net/stream_reciever.cpp	/^int stream_pfd[2];$/;"	v	typeref:typename:int[2]
+stream_thread_pool	net/stream_reciever.cpp	/^ThreadPool stream_thread_pool;$/;"	v	typeref:typename:ThreadPool
+super_block_size	include/linux/fs/fs.h	/^    unsigned int super_block_size;$/;"	m	struct:SuperBlock	typeref:typename:unsigned int
+task_count	tools/thread_manager.cpp	/^    uint32_t task_count;$/;"	m	class:ThreadPoolPrivMems	typeref:typename:uint32_t	file:
+task_mutex	tools/thread_manager.cpp	/^    pthread_mutex_t task_mutex;$/;"	m	class:ThreadPoolExecArgs	typeref:typename:pthread_mutex_t	file:
+task_ptr	tools/thread_manager.cpp	/^    ThreadTask *task_ptr;$/;"	m	class:ThreadPoolExecArgs	typeref:typename:ThreadTask *	file:
+thread_clean_func	tools/thread_manager.cpp	/^void thread_clean_func(void *args)$/;"	f	typeref:typename:void
+thread_count	tools/thread_manager.cpp	/^    uint32_t thread_count;$/;"	m	class:ThreadPoolPrivMems	typeref:typename:uint32_t	file:
+thread_func	tools/thread_manager.cpp	/^void *thread_func(void *args)$/;"	f	typeref:typename:void *
+thread_handles	tools/thread_manager.cpp	/^    pthread_t thread_handles[THREAD_GROUP_MAX_COUNT];$/;"	m	class:ThreadPoolPrivMems	typeref:typename:pthread_t[]	file:
+time_second	net/stream_info.h	/^    time_t time_second;$/;"	m	class:StreamInfo	typeref:typename:time_t
+tools_make	Makefile	/^tools_make:$/;"	t
+uint	include/linux/basic_type_redef.h	/^typedef unsigned int uint;$/;"	t	typeref:typename:unsigned int
+uninit	tools/thread_manager.cpp	/^int ThreadPool::uninit()$/;"	f	class:ThreadPool	typeref:typename:int
+uninit_stream_relative	net/stream_reciever.cpp	/^int uninit_stream_relative()$/;"	f	typeref:typename:int
+unset_task	tools/thread_manager.cpp	/^    int unset_task()$/;"	f	class:ThreadPoolExecArgs	typeref:typename:int	file:
+unset_tasks	tools/thread_manager.cpp	/^int ThreadPool::unset_tasks()$/;"	f	class:ThreadPool	typeref:typename:int
+update_tasks	tools/thread_manager.cpp	/^int ThreadPool::update_tasks(ThreadTask *tasks, uint32_t pos)$/;"	f	class:ThreadPool	typeref:typename:int
+write_bitmap	fs/bitmap.cpp	/^int write_bitmap(const struct SuperBlock *sb_ptr, void *bitmap_ptr, int size)$/;"	f	typeref:typename:int
+write_file	fs/filesystems.cpp	/^int write_file(char *filename, int len, void *file_binary, int filesize)$/;"	f	typeref:typename:int
+write_file_demo	Makefile	/^write_file_demo: $(objs) write_file.o$/;"	t
+write_file_des	net/stream_info.h	/^    int write_file_des;$/;"	m	class:StreamInfo	typeref:typename:int
+write_inode	fs/inode.cpp	/^int write_inode(const struct INode *in_ptr, int num)$/;"	f	typeref:typename:int
+write_steam_thread_func	net/stream_reciever.cpp	/^void *write_steam_thread_func(void *args)$/;"	f	typeref:typename:void *
+write_super_blcok	fs/super.cpp	/^int write_super_blcok(struct SuperBlock *sb_ptr)$/;"	f	typeref:typename:int
+~StreamInfo	net/stream_info.cpp	/^StreamInfo::~StreamInfo()$/;"	f	class:StreamInfo
+~ThreadPool	tools/thread_manager.cpp	/^ThreadPool::~ThreadPool()$/;"	f	class:ThreadPool
+~ThreadPoolExecArgs	tools/thread_manager.cpp	/^    virtual ~ThreadPoolExecArgs()$/;"	f	class:ThreadPoolExecArgs	file:
+~ThreadPoolPrivMems	tools/thread_manager.cpp	/^    virtual ~ThreadPoolPrivMems()$/;"	f	class:ThreadPoolPrivMems	file:

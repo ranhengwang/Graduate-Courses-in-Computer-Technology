@@ -1,0 +1,326 @@
+帮我修改这段代码，现在要求有14个任务，每个任务有一个唯一的优先权。每个任务在执行的时候会打印一些东西；其中要求7个任务与其他任务进行交流，另外7个任务通过事件机制同步其行为。/****************************************************************************
+ *
+ * 		Copyright (C) 2005-2009 ESEC UESTC All Rights Reserved.
+ ***************************************************************************/
+
+
+/**
+ * @file 	init.c
+ * @brief
+ * @date
+ */
+
+
+
+#include "include.h"
+#include <stdio.h>
+#include <string.h>
+
+
+void showLogo();
+
+int main(int argc ,char *argv[])
+{
+
+  //volatile int x=sizeof(OSDWORD);
+
+
+ 	BSP_UartInit(); 	
+	BSP_TimerInit();
+	EnableInterrupts;
+	//showLogo();
+	StartOS(OSDEFAULTAPPMODE);
+	
+	
+	return 0;
+
+}
+
+//show LOGO
+void showLogo()
+{
+	printf("************************************************************\n");
+	printf("****************ESEC OSEK EVENT AND MESSAGE*****************\n");
+	printf("************************************************************\n\n");
+}
+
+//output task ID and states
+void showTaskInfo(TaskType taskId)
+{
+	TaskStateType taskState;
+	GetTaskState(taskId, &taskState);
+	printf("task id: %u, ", (int)taskId);
+	switch(taskState)
+	{
+		case RUNNING:
+			printf("taskState: running\n");
+		break;
+		case WAITING:
+			printf("taskState: waiting\n");
+		break;
+		case READY:
+			printf("taskState: ready\n");
+		break;
+		case SUSPENDED:
+			printf("taskState: suspended\n");
+	    break;
+	    default:
+	    break;
+	}
+}
+/*************************************************
+**************** Task1 ***************************
+**************************************************
+*/
+TASK(Task1)
+{	
+	TaskType taskId;
+	StatusType status;
+	EventMaskType mask;
+	
+	GetTaskID(&taskId);
+
+	showLogo();
+
+	
+	printf("**********************task 1 running**********************\n");
+	
+	//show task information
+	showTaskInfo(taskId); 
+	//start COM module
+	StartCOM();
+	
+	//task1 waits for event0x01
+	printf("task1 wait event: 0x01\n");
+	WaitEvent(0x01);
+	//get event maskcode
+	GetEvent(taskId, &mask);
+	printf("task1 get event: %d\n", (int)mask);
+    //set event 0x02 for task2
+	printf("task1 set event 0x02 for task2\n");
+	SetEvent(Task2, 0x02);
+		
+	
+ 	printf("**********************task 1 end**************************\n"); 
+	TerminateTask();
+}
+
+
+
+/*************************************************
+**************** Task2 ***************************
+**************************************************
+*/
+
+TASK(Task2)
+{
+	TaskType taskId;
+	StatusType status;
+	OSBYTE buf1[] = "hello";
+	OSBYTE buf2[] = "hello again";
+	EventMaskType mask;
+	
+	GetTaskID(&taskId);
+	
+    printf("**********************task 2 running**********************\n");
+	showTaskInfo(taskId); 
+	
+	//task2 waits for event 0x02
+	printf("task2 wait event: 0x02\n");
+	WaitEvent(0x02);
+	//get event maskcode
+	GetEvent(taskId, &mask);
+	printf("task2 get event: %d\n", (int)mask);
+	
+	//send message Msg1
+	printf("task2 send Msg1: %s\n", buf1);
+	SendMessage(Msg1, buf1);
+	printf("task2 send Msg1: %s\n", buf2);
+	SendMessage(Msg1, buf2);
+	
+	//set event 0x07 for task7
+	printf("task2 set event 0x07 for task7\n");
+	SetEvent(Task7, 0x07);
+
+	printf("**********************task 2 end**************************\n");
+	TerminateTask();
+}
+
+
+
+/*************************************************
+**************** Task3 ***************************
+**************************************************
+*/
+TASK(Task3)
+{ 
+	TaskType taskId;
+	OSBYTE buf1[] = "good bye";
+	OSBYTE buf2[] = "good bye again";
+	
+	GetTaskID(&taskId);
+    printf("**********************task 3 running**********************\n");
+    showTaskInfo(taskId); 
+    
+    //task3 waits for event 0x03
+    printf("task3 wait event: 0x03\n");
+	WaitEvent(0x03);
+	
+	//task3 send message Msg2
+	printf("task3 send Msg2: %s\n", buf1);
+	SendMessage(Msg2, buf1);
+	printf("task3 send Msg2: %s\n", buf2);
+	SendMessage(Msg2, buf2);
+	
+    printf("**********************task 3 end**************************\n");
+	TerminateTask();
+}
+
+
+/*************************************************
+**************** Task4 ***************************
+**************************************************
+*/
+TASK(Task4)
+{ 
+	TaskType taskId; 
+	StatusType status;
+	OSBYTE buf[20];
+	
+	GetTaskID(&taskId);
+    printf("**********************task 4 running**********************\n");
+    showTaskInfo(taskId); 
+    
+    //task4 waits for event 0x04
+    printf("task4 wait event: 0x04\n");
+	WaitEvent(0x04);
+	
+	//task4 tries to receive message Msg2
+	status = ReceiveMessage(Msg2, buf);
+	if(status == E_OK)
+	{
+	 	printf("task4 receive message Msg2: %s\n", buf);
+	} else
+	{
+		printf("task4 receive message error: %d\n", status);
+	}
+	
+	//task4 receives Msg2 again
+	status = ReceiveMessage(Msg2, buf);
+	if(status == E_OK)
+	{
+	 	printf("task4 receive message Msg2: %s\n", buf);
+	} else
+	{
+		printf("task4 receive message error: %d\n", status);
+	}
+	
+    printf("**********************task 4 end**************************\n");
+    TerminateTask();
+}
+
+/*************************************************
+**************** Task5 ***************************
+**************************************************
+*/
+TASK(Task5)
+{
+	TaskType taskId;
+	StatusType status;
+	
+	GetTaskID(&taskId);	  
+    printf("**********************task 5 running**********************\n");
+   	showTaskInfo(taskId); 
+
+    printf("**********************task 5 end**************************\n");
+    TerminateTask();
+}
+
+/*************************************************
+**************** Task6 ***************************
+**************************************************
+*/
+TASK(Task6)
+{ 
+	TaskType taskId;
+	StatusType status;
+	GetTaskID(&taskId);
+    printf("**********************task 6 running**********************\n");
+    showTaskInfo(taskId); 
+
+    printf("**********************task 6 end**************************\n");
+    TerminateTask();
+}
+
+/*************************************************
+**************** Task7 ***************************
+**************************************************
+*/
+TASK(Task7)
+{ 
+	TaskType taskId;
+	StatusType status;
+	OSBYTE buf[20];
+	
+	GetTaskID(&taskId);
+    
+    printf("**********************task 7 running**********************\n");
+    showTaskInfo(taskId); 
+    
+    //task7 tries to receive message Msg1
+    status = ReceiveMessage(Msg1, buf);
+	if(status == E_OK)
+	{
+	 	printf("task7 receive message Msg1: %s\n", buf);
+	} else
+	{
+		printf("task7 receive message error: %d\n", status);
+	}
+	
+	//task7 tries to receive message Msg1
+	status = ReceiveMessage(Msg1, buf);
+	if(status == E_OK)
+	{
+	 	printf("task7 receive message Msg1: %s\n", buf);
+	} else
+	{
+		printf("task7 receive message error: %d\n", status);
+	}
+	
+	//set event 0x01 for task1
+	printf("task7 set event 0x01 for task1\n");
+	SetEvent(Task1, 0x01);
+	
+	//waits for event 0x07 in order to get message successfully from task1
+	printf("task7 wait event 0x07 to receive message\n");
+	WaitEvent(0x07);
+	
+	//receive message Msg1
+	status = ReceiveMessage(Msg1, buf);
+	if(status == E_OK)
+	{
+	 	printf("task7 receive message Msg1: %s\n", buf);
+	} else
+	{
+		printf("task7 receive message error: %d\n", status);
+	}
+	//receive message Msg1 again
+	status = ReceiveMessage(Msg1, buf);
+	if(status == E_OK)
+	{
+	 	printf("task7 receive message Msg1: %s\n", buf);
+	} else
+	{
+		printf("task7 receive message error: %d\n", status);
+	}
+	
+	//set event 0x03 for task3
+	printf("task7 set event 0x03 for task3\n");
+	SetEvent(Task3, 0x03);
+	//set event 0x04 for task4
+	printf("task7 set event 0x04 for task4\n");
+	SetEvent(Task4, 0x04);
+	
+    printf("**********************task 7 end**************************\n");
+    TerminateTask();
+}

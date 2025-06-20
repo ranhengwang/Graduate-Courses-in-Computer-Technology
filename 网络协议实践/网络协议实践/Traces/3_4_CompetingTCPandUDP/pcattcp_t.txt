@@ -1,0 +1,93 @@
+
+TCP/UDP test
+
+Start TCP transmitter
+
+C:\Downloads\ttcp>PCATTCP.exe -t -l 1000 192.168.0.102
+PCAUSA Test TCP Utility V2.01.01.07
+TCP Transmit Test
+  Transmit    : TCP -> 192.168.0.102:5001
+  Buffer Size : 1000; Alignment: 16384/0
+  TCP_NODELAY : DISABLED (0)
+  Connect     : Connected to 192.168.0.102:5001
+  Send Mode   : Send Pattern; Number of Buffers: 2048
+  Statistics  : TCP -> 192.168.0.102:5001
+2048000 bytes in 4.84 real seconds = 412.88 KB/sec +++
+numCalls: 2048; msec/call: 2.42; calls/sec: 422.79
+
+
+Start UDP transmitter
+
+C:\Downloads\ttcp>pcattcp -t -u -l 1000 -p 5002 192.168.0.102
+PCAUSA Test TCP Utility V2.01.01.07
+UDP Transmit Test
+  Transmit    : UDP -> 192.168.0.102:5002
+  Buffer Size : 1000; Alignment: 16384/0
+  Send Mode   : Send Pattern; Number of Buffers: 2048
+  Statistics  : UDP -> 192.168.0.102:5002
+2048000 bytes in 0.17 real seconds = 11627.91 KB/sec +++
+numCalls: 2050; msec/call: 0.09; calls/sec: 11918.60
+
+
+----------------------------------------------------------------
+
+TCP/TCP test
+
+
+Start TCP transmitter
+
+C:\Downloads\ttcp>PCATTCP.exe -t -l 1000 192.168.0.102
+PCAUSA Test TCP Utility V2.01.01.07
+TCP Transmit Test
+  Transmit    : TCP -> 192.168.0.102:5001
+  Buffer Size : 1000; Alignment: 16384/0
+  TCP_NODELAY : DISABLED (0)
+  Connect     : Connected to 192.168.0.102:5001
+  Send Mode   : Send Pattern; Number of Buffers: 2048
+  Statistics  : TCP -> 192.168.0.102:5001
+2048000 bytes in 6.55 real seconds = 305.48 KB/sec +++
+numCalls: 2048; msec/call: 3.27; calls/sec: 312.82
+
+C:\Downloads\ttcp>
+
+Start TCP transmitter
+
+C:\Downloads\ttcp>pcattcp -t -l 1000 -p 5002 192.168.0.102
+PCAUSA Test TCP Utility V2.01.01.07
+TCP Transmit Test
+  Transmit    : TCP -> 192.168.0.102:5002
+  Buffer Size : 1000; Alignment: 16384/0
+  TCP_NODELAY : DISABLED (0)
+  Connect     : Connected to 192.168.0.102:5002
+  Send Mode   : Send Pattern; Number of Buffers: 2048
+  Statistics  : TCP -> 192.168.0.102:5002
+2048000 bytes in 6.69 real seconds = 299.04 KB/sec +++
+numCalls: 2048; msec/call: 3.34; calls/sec: 306.22
+
+-----------------------------------------------------------------------
+
+
+UDP/UDP test
+
+C:\Downloads\ttcp>pcattcp.exe -u -t -l 1000 192.168.0.102
+PCAUSA Test TCP Utility V2.01.01.07
+UDP Transmit Test
+  Transmit    : UDP -> 192.168.0.102:5001
+  Buffer Size : 1000; Alignment: 16384/0
+  Send Mode   : Send Pattern; Number of Buffers: 2048
+  Statistics  : UDP -> 192.168.0.102:5001
+2048000 bytes in 0.14 real seconds = 14285.71 KB/sec +++
+numCalls: 2050; msec/call: 0.07; calls/sec: 14642.86
+
+C:\Downloads\ttcp>pcattcp -t -u -l 1000 -p 5002 192.168.0.102
+PCAUSA Test TCP Utility V2.01.01.07
+UDP Transmit Test
+  Transmit    : UDP -> 192.168.0.102:5002
+  Buffer Size : 1000; Alignment: 16384/0
+  Send Mode   : Send Pattern; Number of Buffers: 2048
+  Statistics  : UDP -> 192.168.0.102:5002
+2048000 bytes in 0.19 real seconds = 10695.19 KB/sec +++
+numCalls: 2050; msec/call: 0.09; calls/sec: 10962.57
+
+C:\Downloads\ttcp>
+

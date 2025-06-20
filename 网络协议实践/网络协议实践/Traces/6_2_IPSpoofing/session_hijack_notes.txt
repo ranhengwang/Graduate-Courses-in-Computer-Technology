@@ -1,0 +1,68 @@
+
+SERVER
+(ip.addr eq 192.168.1.103 and ip.addr eq 192.168.1.101) and (tcp.port eq 1073 and tcp.port eq 23) and eth.src eq 00:00:c0:29:36:e8
+
+ATTACKER
+(ip.addr eq 192.168.1.103 and ip.addr eq 192.168.1.101) and (tcp.port eq 1073 and tcp.port eq 23) and eth.src eq 00:01:03:87:a8:eb
+
+only 2 packets from the attacker 521 and 716
+
+521 inconspicuosly sets up the attack - just contains 08 and 0a (space? Return?)
+server wanted seq 233 and it gave it to it
+
+after that when real client sends 233, the server will just acknowledge that it already has it
+
+------------------------------------------------------------------
+
+
+
+All sent by attacker eth.src eq 00:01:03:87:a8:eb
+
+75 total
+
+507-510 attacker arrives and acquires an IP Address via DHCP
+
+519 to carry out attack asks who has 192.168.0.100, sends them 521 and 716
+
+98737 in preparation for next attack translates 192.168.0.103
+
+98739 FIN, ACK sent to terminate connection
+
+99095 RST end a session
+
+99950, 99957 hijack another session 1076 - failed?
+
+176519 (21, 23) 1086 failed telnet?
+176512 and on - telnet using captured password (1067)
+176532 another telnet with captured password (1088)
+
+
+klogin  4 attempts
+
+ftp using captured password 
+
+
+
+
+
+
+--------------------------------------------------------------
+
+denial of service attack - ends 4 sessions in a row
+
+
+experience from victims standpoint
+
+
+
+can get data
+end connections different ways to end a connection
+hijack connections
+
+
+
+
+
+5 main connections - 4 interrupted or hihacked TCP sessions
+
+then an FTP using the stolen password

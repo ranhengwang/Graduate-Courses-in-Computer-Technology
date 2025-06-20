@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>判断是否为图序列</title>
+  <style>
+    body { font-family: "微软雅黑", Arial, sans-serif; }
+    #canvas { border: 1px solid #ccc; background: #fafafa; }
+    #label { margin-bottom: 8px; display: block; }
+    #result { margin: 10px 0; color: #007700; }
+  </style>
+</head>
+<body>
+  <h2>判断是否为图序列</h2>
+  <label id="label">请输入一个有限非负整数序列，用逗号分隔：</label>
+  <input type="text" id="input" style="width:300px;">
+  <button id="checkBtn">检查序列</button>
+  <div id="result"></div>
+  <canvas id="canvas" width="500" height="500"></canvas>
+
+  <script>
+    function isAllZeros(seq) {
+      return seq.every(x => x === 0);
+    }
+
+    function sortMaxIndex(seq, maxv) {
+      let temp = seq.slice();
+      let index = [];
+      for (let i = 0; i < maxv; i++) {
+        let max = Math.max(...temp);
+        let idx = temp.indexOf(max);
+        index.push(idx);
+        temp[idx] = -1; // 置为-1，防止重复
+      }
+      return index;
+    }
+
+    function drawGraph(seq, ctx, R = 200, centerX = 250, centerY = 250) {
+      ctx.clearRect(0, 0, 500, 500);
+      let num = seq.length;
+      let alpha = [];
+      let xarr = [];
+      let yarr = [];
+      for (let i = 0; i < num; i++) {
+        alpha.push((2 * Math.PI / num) * i);
+        xarr.push(centerX + R * Math.cos(alpha[i]));
+        yarr.push(centerY + R * Math.sin(alpha[i]));
+      }
+      // 画点
+      ctx.fillStyle = "red";
+      for (let i = 0; i < num; i++) {
+        ctx.beginPath();
+        ctx.arc(xarr[i], yarr[i], 10, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.fillStyle = "black";
+        ctx.fillText(i, xarr[i] - 4, yarr[i] + 4);
+        ctx.fillStyle = "red";
+      }
+      // 画边
+      let Sequence = seq.slice().sort((a, b) => b - a);
+      let seqCopy = seq.slice();
+      while (!isAllZeros(Sequence)) {
+        let maxv = Math.max(...Sequence);
+        let maxi = Sequence.indexOf(maxv);
+        Sequence[maxi] = 0;
+        let idxs = sortMaxIndex(Sequence, maxv);
+        for (let i of idxs) {
+          if (Sequence[i] > 0) {
+            ctx.beginPath();
+            ctx.moveTo(xarr[maxi], yarr[maxi]);
+            ctx.lineTo(xarr[i], yarr[i]);
+            ctx.strokeStyle = "green";
+            ctx.lineWidth = 2;
+            ctx.stroke();
+            Sequence[i] -= 1;
+          } else {
+            return false;
+          }
+        }
+      }
+      return true;
+    }
+
+    document.getElementById('checkBtn').onclick = function () {
+      let input = document.getElementById('input').value.trim();
+      let resultDiv = document.getElementById('result');
+      let ctx = document.getElementById('canvas').getContext('2d');
+      if (!input) {
+        resultDiv.textContent = "请输入一个有限非负整数序列，用逗号分隔：";
+        ctx.clearRect(0, 0, 500, 500);
+        return;
+      }
+      let seq = input.split(/,|，/).map(x => x.trim()).filter(x => x.length > 0);
+      try {
+        seq = seq.map(Number);
+        if (seq.some(x => isNaN(x) || x < 0)) {
+          resultDiv.textContent = "有负数或无效输入，请重新输入一个有限非负整数序列，用逗号分隔：";
+          ctx.clearRect(0, 0, 500, 500);
+          return;
+        }
+      } catch {
+        resultDiv.textContent = "无效的输入，请重新输入一个有限非负整数序列，用逗号分隔：";
+        ctx.clearRect(0, 0, 500, 500);
+        return;
+      }
+      let ok = drawGraph(seq, ctx);
+      if (ok) {
+        resultDiv.textContent = "该序列为图序列，下方给出示例图";
+      } else {
+        resultDiv.textContent = "序列：" + input + " 不是图序列";
+        ctx.clearRect(0, 0, 500, 500);
+      }
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,504 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: SCCPU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SCCPU.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SCCPU"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-fgg484
+
+---- Source Options
+Top Module Name                    : SCCPU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Administrator\Desktop\SCCPU\Regfile.v" into library work
+Parsing module <Regfile>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\SCCPU\mux5_2_1.v" into library work
+Parsing module <mux5_2_1>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\SCCPU\mux32_4_1.v" into library work
+Parsing module <mux32_4_1>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\SCCPU\mux32_2_1.v" into library work
+Parsing module <mux32_2_1>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\SCCPU\Inst_ROM.v" into library work
+Parsing module <Inst_ROM>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\SCCPU\dff32.v" into library work
+Parsing module <dff32>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\SCCPU\Control_Unit.v" into library work
+Parsing module <Control_Unit>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\SCCPU\alu.v" into library work
+Parsing module <alu>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\SCCPU\add32.v" into library work
+Parsing module <add32>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\SCCPU\WB_STAGE.v" into library work
+Parsing module <WB_STAGE>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\SCCPU\MEM_WBreg.v" into library work
+Parsing module <MEM_WBreg>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\SCCPU\MEM_STAGE.v" into library work
+Parsing module <MEM_STAGE>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\SCCPU\IF_STAGE.v" into library work
+Parsing module <IF_STAGE>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\SCCPU\IF_IDreg.v" into library work
+Parsing module <IF_IDreg>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\SCCPU\ID_STAGE.v" into library work
+Parsing module <ID_STAGE>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\SCCPU\ID_EXEreg.v" into library work
+Parsing module <ID_EXEreg>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\SCCPU\EXE_STAGE.v" into library work
+Parsing module <EXE_STAGE>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\SCCPU\EXE_MEMreg.v" into library work
+Parsing module <EXE_MEMreg>.
+Analyzing Verilog file "C:\Users\Administrator\Desktop\SCCPU\SCCPU.v" into library work
+Parsing module <SCCPU>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <SCCPU>.
+
+Elaborating module <IF_STAGE>.
+
+Elaborating module <dff32>.
+
+Elaborating module <add32>.
+
+Elaborating module <mux32_4_1>.
+
+Elaborating module <Inst_ROM>.
+
+Elaborating module <IF_IDreg>.
+
+Elaborating module <ID_STAGE>.
+
+Elaborating module <Control_Unit>.
+
+Elaborating module <Regfile>.
+
+Elaborating module <mux5_2_1>.
+
+Elaborating module <ID_EXEreg>.
+
+Elaborating module <EXE_STAGE>.
+
+Elaborating module <mux32_2_1>.
+
+Elaborating module <alu>.
+
+Elaborating module <EXE_MEMreg>.
+
+Elaborating module <MEM_STAGE>.
+
+Elaborating module <MEM_WBreg>.
+WARNING:HDLCompiler:1127 - "C:\Users\Administrator\Desktop\SCCPU\SCCPU.v" Line 59: Assignment to wb_wreg ignored, since the identifier is never used
+
+Elaborating module <WB_STAGE>.
+WARNING:HDLCompiler:1127 - "C:\Users\Administrator\Desktop\SCCPU\SCCPU.v" Line 61: Assignment to wb_wreg ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <SCCPU>.
+    Related source file is "C:\Users\Administrator\Desktop\SCCPU\SCCPU.v".
+INFO:Xst:3210 - "C:\Users\Administrator\Desktop\SCCPU\SCCPU.v" line 59: Output port <wb_rn> of the instance <MEM_WB> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Administrator\Desktop\SCCPU\SCCPU.v" line 59: Output port <wb_wreg> of the instance <MEM_WB> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Administrator\Desktop\SCCPU\SCCPU.v" line 61: Output port <wrn> of the instance <stage5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Administrator\Desktop\SCCPU\SCCPU.v" line 61: Output port <wwreg> of the instance <stage5> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <SCCPU> synthesized.
+
+Synthesizing Unit <IF_STAGE>.
+    Related source file is "C:\Users\Administrator\Desktop\SCCPU\IF_STAGE.v".
+    Summary:
+	no macro.
+Unit <IF_STAGE> synthesized.
+
+Synthesizing Unit <dff32>.
+    Related source file is "C:\Users\Administrator\Desktop\SCCPU\dff32.v".
+    Found 32-bit register for signal <q>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <dff32> synthesized.
+
+Synthesizing Unit <add32>.
+    Related source file is "C:\Users\Administrator\Desktop\SCCPU\add32.v".
+    Found 32-bit adder for signal <c> created at line 26.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <add32> synthesized.
+
+Synthesizing Unit <mux32_4_1>.
+    Related source file is "C:\Users\Administrator\Desktop\SCCPU\mux32_4_1.v".
+    Found 32-bit 4-to-1 multiplexer for signal <y> created at line 30.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux32_4_1> synthesized.
+
+Synthesizing Unit <Inst_ROM>.
+    Related source file is "C:\Users\Administrator\Desktop\SCCPU\Inst_ROM.v".
+    Found 64x32-bit Read Only RAM for signal <inst>
+    Summary:
+	inferred   1 RAM(s).
+Unit <Inst_ROM> synthesized.
+
+Synthesizing Unit <IF_IDreg>.
+    Related source file is "C:\Users\Administrator\Desktop\SCCPU\IF_IDreg.v".
+    Found 32-bit register for signal <id_inst>.
+    Found 32-bit register for signal <id_pc4>.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+Unit <IF_IDreg> synthesized.
+
+Synthesizing Unit <ID_STAGE>.
+    Related source file is "C:\Users\Administrator\Desktop\SCCPU\ID_STAGE.v".
+    Summary:
+	no macro.
+Unit <ID_STAGE> synthesized.
+
+Synthesizing Unit <Control_Unit>.
+    Related source file is "C:\Users\Administrator\Desktop\SCCPU\Control_Unit.v".
+    Summary:
+	no macro.
+Unit <Control_Unit> synthesized.
+
+Synthesizing Unit <Regfile>.
+    Related source file is "C:\Users\Administrator\Desktop\SCCPU\Regfile.v".
+    Found 992-bit register for signal <n0050[991:0]>.
+    Found 32-bit 31-to-1 multiplexer for signal <rna[4]_register[31][31]_wide_mux_1_OUT> created at line 28.
+    Found 32-bit 31-to-1 multiplexer for signal <rnb[4]_register[31][31]_wide_mux_4_OUT> created at line 29.
+    Summary:
+	inferred 992 D-type flip-flop(s).
+	inferred  35 Multiplexer(s).
+Unit <Regfile> synthesized.
+
+Synthesizing Unit <mux5_2_1>.
+    Related source file is "C:\Users\Administrator\Desktop\SCCPU\mux5_2_1.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux5_2_1> synthesized.
+
+Synthesizing Unit <ID_EXEreg>.
+    Related source file is "C:\Users\Administrator\Desktop\SCCPU\ID_EXEreg.v".
+    Found 1-bit register for signal <exe_wmem>.
+    Found 1-bit register for signal <exe_aluimm>.
+    Found 1-bit register for signal <exe_shift>.
+    Found 1-bit register for signal <exe_wreg>.
+    Found 1-bit register for signal <exe_m2reg>.
+    Found 3-bit register for signal <exe_aluc>.
+    Found 32-bit register for signal <exe_ra>.
+    Found 32-bit register for signal <exe_rb>.
+    Found 32-bit register for signal <exe_imm>.
+    Found 5-bit register for signal <exe_rn>.
+    Summary:
+	inferred 109 D-type flip-flop(s).
+Unit <ID_EXEreg> synthesized.
+
+Synthesizing Unit <EXE_STAGE>.
+    Related source file is "C:\Users\Administrator\Desktop\SCCPU\EXE_STAGE.v".
+WARNING:Xst:647 - Input <ern> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <em2reg> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ewmem> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ewreg> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <EXE_STAGE> synthesized.
+
+Synthesizing Unit <mux32_2_1>.
+    Related source file is "C:\Users\Administrator\Desktop\SCCPU\mux32_2_1.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux32_2_1> synthesized.
+
+Synthesizing Unit <alu>.
+    Related source file is "C:\Users\Administrator\Desktop\SCCPU\alu.v".
+    Found 32-bit subtractor for signal <alua[31]_alub[31]_sub_14_OUT> created at line 35.
+    Found 32-bit adder for signal <alua[31]_alub[31]_add_1_OUT> created at line 29.
+    Found 32-bit shifter logical right for signal <alub[31]_alua[31]_shift_right_9_OUT> created at line 33
+    Found 32-bit shifter logical left for signal <alub[31]_alua[31]_shift_left_11_OUT> created at line 34
+    Found 32-bit 7-to-1 multiplexer for signal <ealu> created at line 25.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  12 Multiplexer(s).
+	inferred   2 Combinational logic shifter(s).
+Unit <alu> synthesized.
+
+Synthesizing Unit <EXE_MEMreg>.
+    Related source file is "C:\Users\Administrator\Desktop\SCCPU\EXE_MEMreg.v".
+    Found 1-bit register for signal <mem_m2reg>.
+    Found 1-bit register for signal <mem_wreg>.
+    Found 1-bit register for signal <mem_wmem>.
+    Found 5-bit register for signal <mem_rn>.
+    Found 32-bit register for signal <mem_Alu_Result>.
+    Found 32-bit register for signal <mem_rb>.
+    Summary:
+	inferred  72 D-type flip-flop(s).
+Unit <EXE_MEMreg> synthesized.
+
+Synthesizing Unit <MEM_STAGE>.
+    Related source file is "C:\Users\Administrator\Desktop\SCCPU\MEM_STAGE.v".
+WARNING:Xst:653 - Signal <mrn> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <mwreg> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <mm2reg> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 32x32-bit single-port RAM <Mram_ram> for signal <ram>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <MEM_STAGE> synthesized.
+
+Synthesizing Unit <MEM_WBreg>.
+    Related source file is "C:\Users\Administrator\Desktop\SCCPU\MEM_WBreg.v".
+    Found 1-bit register for signal <wb_wreg>.
+    Found 1-bit register for signal <wb_m2reg>.
+    Found 5-bit register for signal <wb_rn>.
+    Found 32-bit register for signal <wb_Alu_Result>.
+    Found 32-bit register for signal <wb_mo>.
+    Summary:
+	inferred  71 D-type flip-flop(s).
+Unit <MEM_WBreg> synthesized.
+
+Synthesizing Unit <WB_STAGE>.
+    Related source file is "C:\Users\Administrator\Desktop\SCCPU\WB_STAGE.v".
+WARNING:Xst:653 - Signal <wrn> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <wwreg> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <WB_STAGE> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit single-port RAM                             : 1
+ 64x32-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Registers                                            : 25
+ 1-bit register                                        : 10
+ 3-bit register                                        : 1
+ 32-bit register                                       : 10
+ 5-bit register                                        : 3
+ 992-bit register                                      : 1
+# Multiplexers                                         : 52
+ 32-bit 2-to-1 multiplexer                             : 48
+ 32-bit 31-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+# Logic shifters                                       : 2
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <wb_m2reg> (without init value) has a constant value of 0 in block <MEM_WB>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <exe_m2reg> of sequential type is unconnected in block <ID_EXE>.
+WARNING:Xst:2677 - Node <mem_m2reg> of sequential type is unconnected in block <EXE_MEM>.
+
+Synthesizing (advanced) Unit <Inst_ROM>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_inst> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 32-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <a>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <inst>          |          |
+    -----------------------------------------------------------------------
+Unit <Inst_ROM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <MEM_STAGE>.
+INFO:Xst:3217 - HDL ADVISOR - Register <wb_mo> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_ram> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <datain>        |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ram> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+Unit <MEM_STAGE> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit single-port distributed RAM                 : 1
+ 64x32-bit single-port distributed Read Only RAM       : 1
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 32-bit addsub                                         : 1
+# Registers                                            : 1340
+ Flip-Flops                                            : 1340
+# Multiplexers                                         : 52
+ 32-bit 2-to-1 multiplexer                             : 48
+ 32-bit 31-to-1 multiplexer                            : 2
+ 32-bit 4-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+# Logic shifters                                       : 2
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+ERROR:Xst:528 - Multi-source in Unit <SCCPU> on signal <mem_rn<4>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDC instance <EXE_MEM/mem_rn_4>
+   Dangling signal <stage4/mrn<1>> in Unit <MEM_STAGE> is tied to 0 by XST
+
+ERROR:Xst:528 - Multi-source in Unit <SCCPU> on signal <mem_rn<3>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDC instance <EXE_MEM/mem_rn_3>
+   Dangling signal <stage4/mrn<1>> in Unit <MEM_STAGE> is tied to 0 by XST
+
+ERROR:Xst:528 - Multi-source in Unit <SCCPU> on signal <mem_rn<2>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDC instance <EXE_MEM/mem_rn_2>
+   Dangling signal <stage4/mrn<1>> in Unit <MEM_STAGE> is tied to 0 by XST
+
+ERROR:Xst:528 - Multi-source in Unit <SCCPU> on signal <mem_rn<1>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDC instance <EXE_MEM/mem_rn_1>
+   Dangling signal <stage4/mrn<1>> in Unit <MEM_STAGE> is tied to 0 by XST
+
+ERROR:Xst:528 - Multi-source in Unit <SCCPU> on signal <mem_rn<0>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDC instance <EXE_MEM/mem_rn_0>
+   Dangling signal <stage4/mrn<1>> in Unit <MEM_STAGE> is tied to 0 by XST
+
+ERROR:Xst:528 - Multi-source in Unit <SCCPU> on signal <mem_m2reg>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDC instance <EXE_MEM/mem_m2reg>
+   Dangling signal <stage4/mrn<1>> in Unit <MEM_STAGE> is tied to 0 by XST
+
+ERROR:Xst:528 - Multi-source in Unit <SCCPU> on signal <mem_wreg>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDC instance <EXE_MEM/mem_wreg>
+   Dangling signal <stage4/mrn<1>> in Unit <MEM_STAGE> is tied to 0 by XST
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.71 secs
+ 
+--> 
+
+Total memory usage is 266264 kilobytes
+
+Number of errors   :    7 (   0 filtered)
+Number of warnings :   14 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
+

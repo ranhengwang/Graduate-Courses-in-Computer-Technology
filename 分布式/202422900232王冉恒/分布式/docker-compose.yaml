@@ -1,0 +1,17 @@
+services:
+  node1:
+    build: .
+    command: ["python3", "test.py", "1"]
+    network_mode: host
+
+  node2:
+    build: .
+    command: ["python3", "test.py", "2"]
+    network_mode: host
+
+
+  node3:
+    build: .
+    command: ["python3", "test.py", "3"]
+    network_mode: host
+name: sdcs_project

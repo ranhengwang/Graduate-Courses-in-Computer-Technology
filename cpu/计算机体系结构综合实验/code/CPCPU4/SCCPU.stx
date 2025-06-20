@@ -1,0 +1,92 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Lenovo/Desktop/CPCPU4/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Lenovo/Desktop/CPCPU4/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: SCCPU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Lenovo\Desktop\CPCPU4\Regfile.v" into library work
+Parsing module <Regfile>.
+Analyzing Verilog file "C:\Users\Lenovo\Desktop\CPCPU4\mux5_2_1.v" into library work
+Parsing module <mux5_2_1>.
+Analyzing Verilog file "C:\Users\Lenovo\Desktop\CPCPU4\mux32_4_1.v" into library work
+Parsing module <mux32_4_1>.
+Analyzing Verilog file "C:\Users\Lenovo\Desktop\CPCPU4\mux32_2_1.v" into library work
+Parsing module <mux32_2_1>.
+Analyzing Verilog file "C:\Users\Lenovo\Desktop\CPCPU4\Inst_ROM.v" into library work
+Parsing module <Inst_ROM>.
+Analyzing Verilog file "C:\Users\Lenovo\Desktop\CPCPU4\dff32.v" into library work
+Parsing module <dff32>.
+Analyzing Verilog file "C:\Users\Lenovo\Desktop\CPCPU4\Control_Unit.v" into library work
+Parsing module <Control_Unit>.
+Analyzing Verilog file "C:\Users\Lenovo\Desktop\CPCPU4\alu.v" into library work
+Parsing module <alu>.
+Analyzing Verilog file "C:\Users\Lenovo\Desktop\CPCPU4\add32.v" into library work
+Parsing module <add32>.
+Analyzing Verilog file "C:\Users\Lenovo\Desktop\CPCPU4\WB_STAGE.v" into library work
+Parsing module <WB_STAGE>.
+Analyzing Verilog file "C:\Users\Lenovo\Desktop\CPCPU4\MEM_WBreg.v" into library work
+Parsing module <MEM_WBreg>.
+Analyzing Verilog file "C:\Users\Lenovo\Desktop\CPCPU4\MEM_STAGE.v" into library work
+Parsing module <MEM_STAGE>.
+Analyzing Verilog file "C:\Users\Lenovo\Desktop\CPCPU4\IF_STAGE.v" into library work
+Parsing module <IF_STAGE>.
+Analyzing Verilog file "C:\Users\Lenovo\Desktop\CPCPU4\IF_IDreg.v" into library work
+Parsing module <IF_IDreg>.
+Analyzing Verilog file "C:\Users\Lenovo\Desktop\CPCPU4\ID_STAGE.v" into library work
+Parsing module <ID_STAGE>.
+Analyzing Verilog file "C:\Users\Lenovo\Desktop\CPCPU4\ID_EXEreg.v" into library work
+Parsing module <ID_EXEreg>.
+Analyzing Verilog file "C:\Users\Lenovo\Desktop\CPCPU4\EXE_STAGE.v" into library work
+Parsing module <EXE_STAGE>.
+Analyzing Verilog file "C:\Users\Lenovo\Desktop\CPCPU4\EXE_MEMreg.v" into library work
+Parsing module <EXE_MEMreg>.
+Analyzing Verilog file "C:\Users\Lenovo\Desktop\CPCPU4\SCCPU.v" into library work
+Parsing module <SCCPU>.
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.21 secs
+ 
+--> 
+
+Total memory usage is 183144 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

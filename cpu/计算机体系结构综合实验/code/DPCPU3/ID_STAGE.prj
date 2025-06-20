@@ -1,0 +1,5 @@
+verilog work "Regfile.v"
+verilog work "mux5_2_1.v"
+verilog work "Control_Unit.v"
+verilog work "add32.v"
+verilog work "ID_STAGE.v"

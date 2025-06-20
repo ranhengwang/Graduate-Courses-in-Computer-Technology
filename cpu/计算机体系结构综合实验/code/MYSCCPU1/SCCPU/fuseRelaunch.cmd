@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Administrator/Desktop/MYSCCPU/SCCPU/SCCPU_tb_isim_beh.exe" -prj "C:/Users/Administrator/Desktop/MYSCCPU/SCCPU/SCCPU_tb_beh.prj" "work.SCCPU_tb" "work.glbl" 

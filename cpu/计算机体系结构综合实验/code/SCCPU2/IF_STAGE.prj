@@ -1,0 +1,5 @@
+verilog work "mux32_4_1.v"
+verilog work "Inst_ROM.v"
+verilog work "dff32.v"
+verilog work "add32.v"
+verilog work "IF_STAGE.v"
